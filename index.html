@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veetr - Open Source Sailing Dashboard</title>
+    <meta name="description" content="Open source sailing dashboard for real-time wind, GPS, and vessel data monitoring. ESP32-based hardware with modern web interface.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Veetr - Open Source Sailing Dashboard">
+    <meta property="og:description" content="Monitor wind speed, direction, GPS, and vessel tilt in real-time with our open source sailing dashboard.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veetr.org">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛵</text></svg>">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#top" class="logo">
+                    <span>⛵</span>
+                    Veetr
+                </a>
+                <nav>
+                    <a href="#features">Features</a>
+                    <a href="#specs">Specifications</a>
+                    <a href="#docs">Documentation</a>
+                    <a href="https://github.com/escopecz/veetr">GitHub</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Sail Smart, Sail Free</h1>
+            <p>Experience the freedom of open sailing technology. Real-time wind, GPS, and compass data on any device.</p>
+            <p>Build the hardware yourself if you wish to geek out or buy a kit. Modify the design, or update the firmware for everyone.</p>
+            <div class="cta-buttons">
+                <a href="https://escopecz.github.io/veetr" class="btn btn-primary">Go To App</a>
+                <a href="https://github.com/escopecz/veetr" class="btn btn-secondary">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Veetr?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🌊</div>
+                    <h3>Real-Time Data</h3>
+                    <p>Track apparent and true wind speed, GPS position, vessel heading, and heel angle with sub-second updates.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Modern Interface</h3>
+                    <p>Progressive Web App that works on any device. Install on your phone for offline access and native app experience.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔓</div>
+                    <h3>Open Hardware & Software</h3>
+                    <p>Complete schematics, PCB designs, 3D models, firmware, and web app are all open source. Build from scratch, modify designs, or buy a kit.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Low Power</h3>
+                    <p>Runs 24h+ with a 10Ah power bank. Perfect for multi-day sailing without draining your boat's electrical system.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">�</div>
+                    <h3>Community Driven</h3>
+                    <p>Built by sailors, for sailors. Anyone can contribute features, improvements, or fixes that benefit the entire community. Your idea could be in the next release.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Truly Affordable</h3>
+                    <p>Open hardware means no licensing fees. Build for ~$250 in components, or support the project with a kit. Your choice, your freedom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="open-hardware">
+        <div class="container">
+            <h2>🔧 Open Hardware Philosophy</h2>
+            <div class="open-hardware-content">
+                <div class="open-hardware-text">
+                    <h3>Complete Freedom</h3>
+                    <p>Veetr embraces true open hardware principles. Every schematic, PCB layout, 3D model, and line of code is freely available under open source licenses.</p>
+                    
+                    <h3>Your Choice, Your Way</h3>
+                    <ul>
+                        <li><strong>🏗️ Build from Scratch:</strong> Download PCB files and build your own</li>
+                        <li><strong>🛒 Source Components:</strong> Buy parts directly from suppliers</li>
+                        <li><strong>🔧 Modify Designs:</strong> Adapt hardware for your specific needs</li>
+                        <li><strong>📦 Support with Kits:</strong> Purchase tested kits to support development</li>
+                    </ul>
+                    
+                    <p>No vendor lock-in, no proprietary connectors, no licensing fees. This is hardware freedom.</p>
+                </div>
+                <div class="open-hardware-benefits">
+                    <div class="benefit-item">
+                        <span>📋</span>
+                        <div>
+                            <h4>Complete Schematics</h4>
+                            <p>Full electrical designs with component specifications</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>🖥️</span>
+                        <div>
+                            <h4>PCB Layouts</h4>
+                            <p>Gerber files ready for manufacturing</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>📐</span>
+                        <div>
+                            <h4>3D Models</h4>
+                            <p>Enclosure designs for 3D printing</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>🔧</span>
+                        <div>
+                            <h4>Assembly Guides</h4>
+                            <p>Step-by-step build instructions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs" class="specs">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>🔧 Hardware</h3>
+                    <ul class="spec-list">
+                        <li>ESP32-WROOM-32U controller</li>
+                        <li>BNO080 9-axis IMU sensor</li>
+                        <li>RS485 ultrasonic wind sensor</li>
+                        <li>GPS module (optional)</li>
+                        <li>USB-C power input</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>📡 Connectivity</h3>
+                    <ul class="spec-list">
+                        <li>Bluetooth Low Energy (BLE)</li>
+                        <li>Up to 4 simultaneous connections</li>
+                        <li>10-50 meter range</li>
+                        <li>Web Bluetooth API</li>
+                        <li>Secure discovery mode</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>⚡ Power & Performance</h3>
+                    <ul class="spec-list">
+                        <li>200mA typical consumption</li>
+                        <li>24h+ battery life (10Ah power bank)</li>
+                        <li>1-10Hz data update rates</li>
+                        <li>Real-time sensor fusion</li>
+                        <li>Automatic calibration</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>🌐 Browser Support</h3>
+                    <ul class="spec-list">
+                        <li>Chrome, Edge, Opera</li>
+                        <li>Android devices</li>
+                        <li>iOS with Bluefy browser</li>
+                        <li>Windows, Mac, Linux</li>
+                        <li>PWA installation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="docs" class="docs-section">
+        <div class="container">
+            <h2>Documentation & Resources</h2>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <h3>🚀 Setup Guide</h3>
+                    <p>Step-by-step instructions for sailors to get their Veetr dashboard up and running.</p>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/SETUP.md">View Setup Guide →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>🔧 Hardware Guide</h3>
+                    <p>Complete hardware specifications, wiring diagrams, and component sourcing information.</p>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/HARDWARE.md">View Hardware Guide →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>💻 Development Guide</h3>
+                    <p>Developer workflow, build instructions, and contribution guidelines for the project.</p>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/DEVELOPMENT.md">View Development Guide →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>📋 Compliance</h3>
+                    <p>FCC, CE, and IC regulatory compliance information based on certified ESP32 modules.</p>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/COMPLIANCE.md">View Compliance Info →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>🔄 Firmware Updates</h3>
+                    <p>How to update your ESP32 firmware with the latest features and improvements.</p>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/FIRMWARE_UPDATE.md">View Update Guide →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>📦 Version Management</h3>
+                    <p>Release process, versioning workflow, and automated deployment information.</p>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/VERSION_MANAGEMENT.md">View Version Guide →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Project</h3>
+                    <a href="https://escopecz.github.io/veetr">Live Demo</a>
+                    <a href="https://github.com/escopecz/veetr">Source Code</a>
+                    <a href="https://github.com/escopecz/veetr/releases">Releases</a>
+                    <a href="https://github.com/escopecz/veetr/issues">Issues</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Documentation</h3>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/SETUP.md">Setup Guide</a>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/HARDWARE.md">Hardware Guide</a>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/DEVELOPMENT.md">Development</a>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/COMPLIANCE.md">Compliance</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <a href="https://github.com/escopecz/veetr/discussions">Discussions</a>
+                    <a href="https://github.com/escopecz/veetr/blob/main/LICENSE">License</a>
+                    <a href="https://github.com/escopecz/veetr/blob/main/docs/DEVELOPMENT.md#contributing">Contributing</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Veetr Project. Licensed under MIT License. Built with ❤️ for the sailing community.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
